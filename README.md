@@ -44,7 +44,7 @@ Le port était occupé par `AgentService.exe` (PID 6188) — un service système
 
 <img width="1512" height="791" alt="image" src="https://github.com/user-attachments/assets/1e258cd1-7f94-4112-8707-5135a3ffd6e0" />
 
-> `1780024465759_image.png`
+
 
 ---
 
@@ -53,7 +53,6 @@ Le port était occupé par `AgentService.exe` (PID 6188) — un service système
 Après modification du port, Burp démarre correctement.
 
 <img width="1568" height="678" alt="image" src="https://github.com/user-attachments/assets/2dc6876b-f23f-4763-8298-06ff34ca2d3b" />
-> `Screenshot_2026-05-29_041639.png`
 
 ---
 
@@ -63,7 +62,7 @@ Dans Burp : **Proxy Settings → CA Certificate → Export → Certificate in DE
 Fichier sauvegardé : `cacert.der`
 
 <img width="1380" height="868" alt="image" src="https://github.com/user-attachments/assets/38f8c866-f1d8-40a9-8c15-58748f5c7d1f" />
-> `Screenshot_2026-05-29_041149.png`
+
 
 ---
 
@@ -82,7 +81,6 @@ C:\Users\HP\Downloads\cacert: 1 file pushed, 0 skipped. 0.4 MB/s (940 bytes in 0
 ```
 
 <img width="1327" height="258" alt="image" src="https://github.com/user-attachments/assets/088a570b-7e18-41b1-b017-268f61fc83b4" />
-> `Screenshot_2026-05-29_042405.png`
 
 ### 3.2 Vérification du fichier sur l'émulateur
 
@@ -98,7 +96,7 @@ Le fichier `cacert.der` est présent à la racine de `/sdcard/`.
 **Settings → Security → Install a certificate → CA certificate**
 
 <img width="375" height="783" alt="image" src="https://github.com/user-attachments/assets/31d5151b-2641-4fbc-b535-e177c2e0f850" />
-> `Screenshot_2026-05-29_042654.png` / `Screenshot_2026-05-29_042926.png`
+
 
 ---
 
@@ -112,7 +110,7 @@ Le fichier `cacert.der` est présent à la racine de `/sdcard/`.
 | Proxy port | `8081` |
 
 <img width="179" height="386" alt="image" src="https://github.com/user-attachments/assets/2fb0af36-74a8-4044-88d8-6d5341cf2bdb" />
-> `Screenshot_2026-05-29_042220.png`
+
 
 ---
 
@@ -129,7 +127,7 @@ Le script couvre :
 - **WebView** — `onReceivedSslError` → `handler.proceed()`
 <img width="1568" height="603" alt="image" src="https://github.com/user-attachments/assets/7a15e94e-3504-4a38-9f9d-8337a67eae33" />
 
-> `Screenshot_2026-05-29_044353.png`
+
 
 ### Exécution sur WebView Shell
 
@@ -151,7 +149,7 @@ Spawned `org.chromium.webview_shell`. Resuming main thread!
 
 <img width="1568" height="557" alt="image" src="https://github.com/user-attachments/assets/bef94103-0447-425c-b1b5-fe7a6a3787e9" />
 
-> `Screenshot_2026-05-29_044915.png` / `1780027710918_image.png`
+`
 
 ---
 
@@ -164,7 +162,7 @@ Depuis **WebView Shell**, navigation vers :
 
 <img width="472" height="913" alt="image" src="https://github.com/user-attachments/assets/3d9e6573-dad8-4d9e-99c0-c41e4f51a358" />
 <img width="1568" height="234" alt="image" src="https://github.com/user-attachments/assets/70b4df3a-49e0-46f2-b752-30c9cbde506c" />
-Étape 8 — Script sslpin_bypass_native.js (Java)
+## Étape 8 — Script sslpin_bypass_native.js (Java)
 - `https://httpbin.org`
 <img width="932" height="670" alt="image" src="https://github.com/user-attachments/assets/3fa89637-60a7-42c9-9667-412421d55c96" />
 
